@@ -4,10 +4,16 @@
   "description": "Convert longitude and latitude to a zipcode",
   "keywords": ["reverse geolcation", "find zipcode", "longitude", "latitude"],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abarlow85/latlng-to-zip"
+  },
   "scripts": {
     "test": "clear && mocha"
   },
-  "author": "Alec Barlow (abarlow85@gmail.com)",
+  "author": {
+    "name": "Alec Barlow"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3"
