@@ -7,7 +7,7 @@ Convert longitude and latitude to a zipcode.  Requires use of [Google's Geocodin
 ## Getting Starting
 ```
 const reverseGeocode = require('latlng-to-zip');
-reverseGeocode({latitude, longitude})
+reverseGeocode({latitude, longitude}, key)
   .then(zipcode => zipcode)
   .catch(err => err);
 ```
