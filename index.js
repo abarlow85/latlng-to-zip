@@ -2,14 +2,14 @@ const axios = require('axios');
 
 const GEOCODE_ROOT_URL = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='
 
-const buildGeocodeUrl = ({longitude, latitude}) => {
+const buildGeocodeUrl = ({longitude, latitude}, key) => {
   // latitude goes first in query
-  return `${GEOCODE_ROOT_URL}${latitude},${longitude}`;
+  return `${GEOCODE_ROOT_URL}${latitude},${longitude}&key=${key}`;
 };
 
-const reverseGeocode = (region) => {
+const reverseGeocode = (region, key='') => {
   return new Promise((resolve, reject) => {
-    const url = buildGeocodeUrl(region);
+    const url = buildGeocodeUrl(region, key);
     axios.get(url)
     .then(({ data }) => {
       if (data.error_message) {
