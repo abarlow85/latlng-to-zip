@@ -1,6 +1,6 @@
 {
   "name": "latlng-to-zip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert longitude and latitude to a zipcode",
   "keywords": ["reverse geolcation", "find zipcode", "longitude", "latitude"],
   "main": "index.js",
